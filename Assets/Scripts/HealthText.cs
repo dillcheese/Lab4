@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreText : MonoBehaviour
+public class HealthText : MonoBehaviour
 {
-    public int _score = 50;
+    public int _health = 50;
     private Text _text;
 
-    public static ScoreText Instance { get; private set; }
+    public static HealthText Instance { get; private set; }
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class ScoreText : MonoBehaviour
 
     public void useHealth(int value)
     {
-        _score -= value;
-        _text.text = "Health: " + _score.ToString();
+        _health -= value;
+        _text.text = "Health: " + _health.ToString();
     }
 }

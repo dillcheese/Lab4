@@ -11,11 +11,11 @@ public class ClickAudioPlayer : MonoBehaviour
     }
 
     private void OnEnable() {
-        ClickScore.clicked += PlayAudio;
+        ClickHealth.clicked += PlayAudio;
     }
 
     private void OnDisable() {
-        ClickScore.clicked -= PlayAudio;
+        ClickHealth.clicked -= PlayAudio;
     }
 
     private void PlayAudio(){
